@@ -51,6 +51,15 @@ body {
  width: 195px;
  float: right;
 }
+#rightcolumn1 { 
+ display: inline;
+ position: relative;
+ color: #333;
+ margin: 10px 100px 10px 0px;
+ padding: 0px;
+ width: 250px;
+ float: right;
+}
 #footer { 
  width: 902px;
  clear: both;
@@ -59,4 +68,5 @@ body {
  margin: 0px 0px 10px 0px;
  padding: 10px;
 }
+
 .clear { clear: both; background: none; }
