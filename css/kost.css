@@ -66,6 +66,15 @@ textarea {
     width: 225px;
 	margin:10px 3px 10px 3px;
 }
+input[type=password].login,
+input[type=text].login{
+	border: 1px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100px;
+	margin:10px 3px 10px 3px;
+}
+
 
 input[type=submit],
 input[type=reset]{
@@ -78,6 +87,10 @@ input[type=submit].inout{
 	border:double:#F00;
 	border-radius: 5px;
 	color:#FFF
+}
+input[type=text].home{
+	size:10;
+	width:100px;
 }
 
 input[type=submit]:hover,
