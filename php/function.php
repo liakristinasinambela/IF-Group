@@ -18,20 +18,9 @@ require_once  'config.php';
                         echo mysql_error();
                 }
         }
-
-        function getFoto($id){
-                $sql="SELECT * FROM foto WHERE foto_id = $id";
-                $query=mysql_query($sql);
-                if ($query) {
-                        return mysql_fetch_assoc($query);
-                }else
-                {
-                        return false;
-                }
-        }
-		function getLihatiklan($namakost)
+		function getLihatiklan($id)
 		{
-			$sql="SELECT * FROM buatiklan WHERE Nama_Kost = $namakost";
+			$sql="SELECT * FROM buatiklan WHERE id = '$id'";
                 $query=mysql_query($sql);
                 if ($query) {
                         return mysql_fetch_assoc($query);
