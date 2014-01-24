@@ -2,47 +2,47 @@
 /* CSS Document */
 
 body {
-    font-family: "Helvetica", "Arial", sans-serif;
-    font-size: 12px;
+	font-family: "Helvetica", "Arial", sans-serif;
+	font-size: 12px;
 }
 nav {
-				height: 75px;
-                background: #39F;
-                color: white;
-                text-align:left
-            }
+	height: 75px;
+	background: #39F;
+	color: white;
+	text-align:left
+     }
 header {
-                height: 35px;
-				text-align:right;
-				font-size: 1.5em;
-				background: #39F;
+	height: 35px;
+	text-align:right;
+	font-size: 1.5em;
+	background: #39F;
             }			
 #wrapper { 
- margin: 0 auto;
- width: 922px;
+	 margin: 0 auto;
+	 width: 922px;
 }
 }
 #faux {
- margin-bottom: 5px;
- overflow: auto; /* Paul O Brien Fix for IE www.pmob.co.uk */
- width: 100%
+	 margin-bottom: 5px;
+	 overflow: auto; /* Paul O Brien Fix for IE www.pmob.co.uk */
+	 width: 100%
 }
 #kiri { 
-display: inline;
- color: #333;
- margin: 10px;
- padding: 0px;
- width: 70px;
- float: left;
+	display: inline;
+	 color: #333;
+	 margin: 10px;
+	 padding: 0px;
+	 width: 70px;
+	 float: left;
 }
 #kanan {
-float: left;
- color: #333;
- margin: 10px 13px;
- padding: 0px;
- width: 700px;
- display: inline;
- position: relative;
+	float: left;
+	 color: #333;
+	 margin: 10px 13px;
+	 padding: 0px;
+	 width: 700px;
+	 display: inline;
+	 position: relative;
 }
 footer{clear:both;
 }
@@ -66,6 +66,24 @@ textarea {
     width: 225px;
 	margin:10px 3px 10px 3px;
 }
+
+
+input[type*=date]:focus,
+input[type=text]:focus,
+input[type=tel]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+input[type=file]:focus,
+textarea:focus {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+    width: 225px;
+	margin:10px 3px 10px 3px;
+box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+
 input[type=password].login,
 input[type=text].login{
 	border: 1px solid #000;
@@ -73,6 +91,7 @@ input[type=text].login{
     padding: 5px;
     width: 100px;
 	margin:10px 3px 10px 3px;
+box-shadow: 0 0 5px rgba(81, 203, 238, 1);
 }
 
 
