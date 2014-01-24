@@ -1,4 +1,4 @@
-<?php require_once 'function.php';connect(); ?>
+ <?php require_once 'function.php';connect(); ?>
 <?php session_start();  ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -25,19 +25,22 @@ mysql_select_db("kostonline",$con);?>
 		 
 		    <center> <h1>Iklan Kost</h1></center>
 <?php $iklans = getLihatiklans(); ?>
-                <?php foreach ($iklans as $p ):?>
-                <table>                		
-                <tr><br /><td>
-                           <img src="<?php echo $p['Gambar_Kost'];?>" width="100px" height="100px">
-                        </td>
-                        <td>
-                   
+                
+                <table class="flat-table flat-table-3" width="800px" align="center" style="margin-Left:80px;margin-top:10px"> 
+                <?php foreach ($iklans as $p ):?>               		
+                  <tr>
+                    <td width="100px">
+                        <img src="<?php echo $p['Gambar_Kost'];?>" width="100px" height="100px">
+                    </td>
+                    <td>
                      <h2 class="widget-title"><a href="lihatiklanPesan.php?id=<?php echo $p['id'];?>"><?php echo $p['Nama_Kost'];?></a></h2>
-                     <a style="font-size:20px"><?php echo $p['Alamat_Kost'];?></a><br>
-                     <a style="font-size:20px"><?php echo $p['Fasilitas_Kamar'];?></a>
-                      </td></tr>
-                                
-                 <?php endforeach ?></table>
+                       <a style="font-size:20px"><?php echo $p['Alamat_Kost'];?></a><br>
+                       <a style="font-size:20px"><?php echo $p['Fasilitas_Kamar'];?></a>
+                    </td>
+                  </tr>
+                <?php endforeach ?>
+                </table>
+
         </div>
 		     
            
